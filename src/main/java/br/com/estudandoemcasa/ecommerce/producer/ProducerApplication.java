@@ -1,4 +1,4 @@
-package br.com.estudandoemcasa.ecommerce;
+package br.com.estudandoemcasa.ecommerce.producer;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -12,6 +12,7 @@ import java.util.concurrent.ExecutionException;
 
 @SpringBootApplication
 public class ProducerApplication {
+
 
 	public static void main(String[] args) throws ExecutionException, InterruptedException {
 		SpringApplication.run(ProducerApplication.class, args);
