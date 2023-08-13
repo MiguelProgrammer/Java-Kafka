@@ -11,10 +11,10 @@ import java.util.Properties;
 import java.util.concurrent.ExecutionException;
 
 @SpringBootApplication
-public class EcommerceWithKafkaApplication {
+public class ProducerApplication {
 
 	public static void main(String[] args) throws ExecutionException, InterruptedException {
-		SpringApplication.run(EcommerceWithKafkaApplication.class, args);
+		SpringApplication.run(ProducerApplication.class, args);
 
 		var producer = new KafkaProducer<String, String>(properties());
 		var value = "12345,7771,250.90";
