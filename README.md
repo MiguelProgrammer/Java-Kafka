@@ -9,3 +9,5 @@
 ** Docker Desktop <br><img src="https://i.imgur.com/UvczTHE.png" width="800"> 
 <br><em>três containeres, zookeeper, kafka e kafka-ui, também utilizei a ide para o kafka Offset Explorer, apenas para ver as mensagen</em><hr>
 
+** Offset Explorer <br><img src="https://i.imgur.com/AF3lARS.png" width="800"> 
+<br><em>Cluster, contendo os tópicos disponíveis e também os consumers</em><hr>
