@@ -4,7 +4,7 @@
 <img src="https://i.imgur.com/Dyn3DRP.png" width="800"><br>
 
 ** docker-compose up -d <br><img src="https://i.imgur.com/gnZMF7K.png" width="800"><br>
-<em>arquivo docker-compose.yml, baixando o kafka, zookeeper e o kafka-ui, acabei não utilizando o kafka-ui, mas baixei.</em><hr>
+<em>arquivo docker-compose.yml, baixando e subindo o kafka, zookeeper e o kafka-ui, acabei não utilizando o kafka-ui, mas baixei.</em><hr>
 
 ** Docker Desktop <br><img src="https://i.imgur.com/UvczTHE.png" width="800"> 
 <br><em>três containeres, zookeeper, kafka e kafka-ui, também utilizei a ide para o kafka Offset Explorer, apenas para ver as mensagen</em><hr>
