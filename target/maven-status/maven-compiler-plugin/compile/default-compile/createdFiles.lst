@@ -1,2 +1,2 @@
-br\com\estudandoemcasa\ecommerce\ConsumerApplication.class
-br\com\estudandoemcasa\ecommerce\EcommerceWithKafkaApplication.class
+br\com\estudandoemcasa\ecommerce\consumer\ConsumerApplication.class
+br\com\estudandoemcasa\ecommerce\producer\ProducerApplication.class
