@@ -11,3 +11,16 @@
 
 ** Offset Explorer <br><img src="https://i.imgur.com/AF3lARS.png" width="800"> 
 <br><em>Cluster, contendo os tópicos disponíveis e também os consumers</em><hr>
+
+**  Lista os tópicos
+  .\bin\kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --describe
+
+** Altera quantidade de partições
+  .\kafka-topics.sh --alter --zookeeper localhost:2181 --topic ECOMMERCE_NEW_ORDER --partitions 4
+
+** Para Salvar o registro
+  Crie duas pastas na raiz da pasta kakfa chama data, dentroi dela, crie duas, uma chamada kafka e outra zookeeper
+  Após criar os caminhos, edite os arquivos zookeeper.properties e server.properties, ambos se encontra na pasta do kafka:
+  ** # A comma separated list of directories under which to store log files -> log.dirs=\\kafka\\kafka_2.13-3.5.1\\data\\kafka
+  ** # the directory where the snapshot is stored -> dataDir=C:\\kafka\\kafka_2.13-3.5.1\\data\\zookeeper
+
