@@ -1,6 +1,6 @@
 package br.com.estudandoemcasa.ecommerce.service.impl;
 
-import br.com.estudandoemcasa.ecommerce.service.KafkaService;
+import br.com.estudandoemcasa.ecommerce.service.KafkaServiceConsumer;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -13,9 +13,9 @@ import java.util.UUID;
 public class KafkaServiceImpl {
 
     private final KafkaConsumer<String, String> consumer;
-    private final KafkaService parse;
+    private final KafkaServiceConsumer parse;
 
-    public KafkaServiceImpl(String groupId, String topico, KafkaService parse) {
+    public KafkaServiceImpl(String groupId, String topico, KafkaServiceConsumer parse) {
         this.parse = parse;
         this.consumer = new KafkaConsumer<>(properties(groupId));
         consumer.subscribe(Collections.singletonList(topico));

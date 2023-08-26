@@ -8,11 +8,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ConsumerService {
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         SpringApplication.run(ConsumerService.class, args);
 
         ConsumerService econsumer = new ConsumerService();
-        KafkaServiceImpl kafkaService = new KafkaServiceImpl(ConsumerService.class.getName(), "ECOMMERCE_NEW_ORDER",econsumer::parse);
+        KafkaServiceImpl kafkaService = new KafkaServiceImpl(ConsumerService.class.getName(), "ECOMMERCE_NEW_ORDER", econsumer::parse);
         kafkaService.run();
     }
 
