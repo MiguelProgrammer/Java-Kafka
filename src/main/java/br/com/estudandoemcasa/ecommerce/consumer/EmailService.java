@@ -5,6 +5,7 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 @SpringBootApplication
@@ -15,7 +16,9 @@ public class EmailService {
 
 		EmailService emailConsumer = new EmailService();
 
-		KafkaServiceImpl kafkaService = new KafkaServiceImpl(EmailService.class.getName(),"ECOMMERCE_SEND_EMAIL",emailConsumer::parse);
+		KafkaServiceImpl kafkaService = new KafkaServiceImpl(EmailService.class.getName(),
+				"ECOMMERCE_SEND_EMAIL",emailConsumer::parse, String.class,
+				Map.of());
 		kafkaService.run();
 	}
 
