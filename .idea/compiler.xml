@@ -7,15 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="service-fraude" />
+        <module name="service-order" />
+        <module name="common-kafka" />
+        <module name="service-logger" />
         <module name="ecommerce" />
-        <module name="Java-Kafka" />
+        <module name="service-email" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Java-Kafka" options="-parameters" />
+      <module name="Java-Kafka" options="" />
+      <module name="common-kafka" options="-parameters" />
       <module name="ecommerce" options="-parameters" />
+      <module name="service-email" options="-parameters" />
+      <module name="service-fraude" options="-parameters" />
+      <module name="service-logger" options="-parameters" />
+      <module name="service-order" options="-parameters" />
     </option>
   </component>
 </project>

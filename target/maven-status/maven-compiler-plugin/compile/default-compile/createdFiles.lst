@@ -1,6 +1,0 @@
-br\com\estudandoemcasa\ecommerce\consumer\LogConsumerApplication.class
-br\com\estudandoemcasa\ecommerce\consumer\ConsumerApplication.class
-br\com\estudandoemcasa\ecommerce\consumer\EmailConsumerApplication.class
-br\com\estudandoemcasa\ecommerce\service\KafkaService.class
-br\com\estudandoemcasa\ecommerce\service\impl\KafkaServiceImpl.class
-br\com\estudandoemcasa\ecommerce\producer\ProducerApplication.class

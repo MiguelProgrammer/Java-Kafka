@@ -1,0 +1,5 @@
+br\com\estudandoemcasa\ecommerce\KafkaProducerImpl.class
+br\com\estudandoemcasa\ecommerce\GsonDeserializer.class
+br\com\estudandoemcasa\ecommerce\GsonSerializer.class
+br\com\estudandoemcasa\ecommerce\KafkaServiceConsumer.class
+br\com\estudandoemcasa\ecommerce\KafkaServiceImpl.class
